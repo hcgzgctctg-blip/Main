@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songeil Scripts - Professional Roblox Script Platform</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/search.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="15" stroke="white" stroke-width="1.5"/>
+                    <path d="M10 12L22 12L22 16L10 16L10 20L24 20L24 12L10 12Z" fill="white"/>
+                </svg>
+                <span>Songeil Scripts</span>
+            </div>
+
+            <div class="navbar-center">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#scripts" class="nav-link">Scripts</a>
+                <a href="#" class="nav-link">Trending</a>
+                <a href="#" class="nav-link">Executors</a>
+            </div>
+
+            <div class="navbar-right">
+                <button class="btn btn-secondary">Join Discord</button>
+                <button class="btn btn-ghost">Login</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="stars"></div>
+            <div class="particles"></div>
+            <div class="gradient-mesh"></div>
+            <div class="blur-circle blur-1"></div>
+            <div class="blur-circle blur-2"></div>
+            <canvas id="orb-canvas"></canvas>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Professional Roblox Script Platform</h1>
+            <p class="hero-subtitle">Discover high-quality Roblox scripts, browse trending releases, and join the fastest-growing scripting community.</p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary btn-lg">Browse Scripts</button>
+                <button class="btn btn-secondary btn-lg">Join Discord</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <div class="search-bar-wrapper">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for scripts, games, or creators...">
+                    <button class="filter-btn" title="Filter">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M3 4H17M5 10H15M7 16H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <button class="search-btn" title="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/>
+                            <path d="M14 14L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="search-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-content">
+                        <div class="stat-number">12.4K</div>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📜</div>
+                    <div class="stat-content">
+                        <div class="stat-number">2,847</div>
+                        <div class="stat-label">Scripts Available</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-content">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script Grid -->
+    <section class="grid-section" id="scripts">
+        <div class="grid-container">
+            <h2 class="section-title">Trending Scripts</h2>
+            <div class="scripts-grid">
+                <div class="script-card">
+                    <div class="card-thumbnail" style="background: linear-gradient(135deg, #6EA8FE 0%, #8B5CF6 100%);"></div>
+                    <div class="card-content">
+                        <div class="game-label">Blox Fruits</div>
+                        <h3 class="card-game">Blox Fruits</h3>
+                        <p class="card-name">Ultimate Auto Farm</p>
+                        <p class="card-author">by ScriptMaster</p>
+                        <div class="card-stats">
+                            <span class="stat">👁️ 2.4K</span>
+                            <span class="stat">❤️ 842</span>
+                        </div>
+                        <button class="btn btn-copy">Copy Script</button>
+                    </div>
+                </div>
+
+                <div class="script-card">
+                    <div class="card-thumbnail" style="background: linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%);"></div>
+                    <div class="card-content">
+                        <div class="game-label">One Piece</div>
+                        <h3 class="card-game">One Piece Odyssey</h3>
+                        <p class="card-name">Level Booster</p>
+                        <p class="card-author">by CodeNinja</p>
+                        <div class="card-stats">
+                            <span class="stat">👁️ 1.8K</span>
+                            <span class="stat">❤️ 721</span>
+                        </div>
+                        <button class="btn btn-copy">Copy Script</button>
+                    </div>
+                </div>
+
+                <div class="script-card">
+                    <div class="card-thumbnail" style="background: linear-gradient(135deg, #34D399 0%, #10B981 100%);"></div>
+                    <div class="card-content">
+                        <div class="game-label">Dahood</div>
+                        <h3 class="card-game">Dahood</h3>
+                        <p class="card-name">Pro Player Kit</p>
+                        <p class="card-author">by ProDev</p>
+                        <div class="card-stats">
+                            <span class="stat">👁️ 3.2K</span>
+                            <span class="stat">❤️ 956</span>
+                        </div>
+                        <button class="btn btn-copy">Copy Script</button>
+                    </div>
+                </div>
+
+                <div class="script-card">
+                    <div class="card-thumbnail" style="background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);"></div>
+                    <div class="card-content">
+                        <div class="game-label">Arsenal</div>
+                        <h3 class="card-game">Arsenal</h3>
+                        <p class="card-name">Aimbot Enhanced</p>
+                        <p class="card-author">by TacticalDev</p>
+                        <div class="card-stats">
+                            <span class="stat">👁️ 4.1K</span>
+                            <span class="stat">❤️ 1.2K</span>
+                        </div>
+                        <button class="btn btn-copy">Copy Script</button>
+                    </div>
+                </div>
+
+                <div class="script-card">
+                    <div class="card-thumbnail" style="background: linear-gradient(135deg, #EC4899 0%, #DB2777 100%);"></div>
+                    <div class="card-content">
+                        <div class="game-label">Brookhaven</div>
+                        <h3 class="card-game">Brookhaven RP</h3>
+                        <p class="card-name">Economy Manager</p>
+                        <p class="card-author">by RPMaster</p>
+                        <div class="card-stats">
+                            <span class="stat">👁️ 1.6K</span>
+                            <span class="stat">❤️ 634</span>
+                        </div>
+                        <button class="btn btn-copy">Copy Script</button>
+                    </div>
+                </div>
+
+                <div class="script-card">
+                    <div class="card-thumbnail" style="background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);"></div>
+                    <div class="card-content">
+                        <div class="game-label">Jujutsu Shenanigans</div>
+                        <h3 class="card-game">Jujutsu Shenanigans</h3>
+                        <p class="card-name">Combat Optimizer</p>
+                        <p class="card-author">by AnimeMaster</p>
+                        <div class="card-stats">
+                            <span class="stat">👁️ 2.9K</span>
+                            <span class="stat">❤️ 876</span>
+                        </div>
+                        <button class="btn btn-copy">Copy Script</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all">
+                <button class="btn btn-primary">View All Scripts</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-container">
+            <h2 class="section-title">Why Choose Songeil Scripts?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Updates</h3>
+                    <p>Scripts updated within hours of game changes to ensure compatibility and performance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Huge Library</h3>
+                    <p>Access thousands of scripts across all popular Roblox games with daily additions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Trusted Community</h3>
+                    <p>Join 12K+ users who trust our platform for safe, reliable scripting solutions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Private</h3>
+                    <p>Enterprise-grade security ensuring your scripts and data remain completely private.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M10 12L22 12L22 16L10 16L10 20L24 20L24 12L10 12Z" fill="currentColor"/>
+                        </svg>
+                        Songeil Scripts
+                    </div>
+                    <p>Professional Roblox scripting platform for creators and enthusiasts.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <a href="#">Scripts</a>
+                    <a href="#">Trending</a>
+                    <a href="#">Executors</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <a href="#">Discord</a>
+                    <a href="#">Forum</a>
+                    <a href="#">Creators</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Songeil Scripts. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Discord</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
